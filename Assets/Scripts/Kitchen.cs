@@ -1,16 +1,20 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class Kitchen : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void SwitchScene()
     {
-        
+        SceneManager.LoadSceneAsync(1);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void SwitchSceneToCab()
     {
-        
+        SceneManager.LoadSceneAsync(2);
+    }
+    public void SwitchSceneToPAPA()
+    {
+        SceneManager.LoadSceneAsync(3); 
     }
 }
