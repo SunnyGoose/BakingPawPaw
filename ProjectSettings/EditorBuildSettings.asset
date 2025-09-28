@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/CameraScene.unity
+    guid: 9c195176aa61fe34290dedf094de7dd7
+  - enabled: 1
+    path: Assets/Scenes/PhotoAlbumScene.unity
+    guid: 5fbc2e8c782bd0944aa5b7fc6345aae6
+  - enabled: 1
     path: Assets/Scenes/Kitchen.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -24,5 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/RECIPEMAKING.unity
     guid: 99df19869967c43f8a08eab675f1145d
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: d2a09274ffa1a5d43be30be3b38ddda6, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 35dafe1df2865f445a300b3719228ca6, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: e26001d099ce53248850fee1507994a5, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 54bdf601c48fdba489aaa67abe07f257, type: 2}
   m_UseUCBPForAssetBundles: 0
