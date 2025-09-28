@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CHATPAPA.unity
     guid: 831ff1823a1ac4014941474f490d5d8c
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 996813547acf2a641a61a734f322660a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
