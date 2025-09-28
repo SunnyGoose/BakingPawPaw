@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ButtonScaleOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ScaleOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("Settings")]
-    public float scaleAmount = 1.1f;   // how much to scale up
-    public float speed = 10f;          // how fast to scale
+    public float scaleAmount = 1.05f;   // how much to scale up
+    public float speed = 10f;           // how fast to scale
 
     private Vector3 originalScale;
     private Vector3 targetScale;
@@ -18,6 +18,7 @@ public class ButtonScaleOnHover : MonoBehaviour, IPointerEnterHandler, IPointerE
 
     void Update()
     {
+        // Smoothly move towards target scale
         transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * speed);
     }
 
@@ -31,3 +32,4 @@ public class ButtonScaleOnHover : MonoBehaviour, IPointerEnterHandler, IPointerE
         targetScale = originalScale;
     }
 }
+
