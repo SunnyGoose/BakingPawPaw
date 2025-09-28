@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +8,7 @@ public class CameraManager : MonoBehaviour
 {
     WebCamTexture webcam;
     public RawImage img;
-    public Button cameraButton; // Assign this in the Inspector
+    public Button cameraButton;
 
     void Start()
     {

@@ -24,5 +24,8 @@ EditorBuildSettings:
     path: Assets/Scenes/RECIPEMAKING.unity
     guid: 99df19869967c43f8a08eab675f1145d
   m_configObjects:
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 35dafe1df2865f445a300b3719228ca6, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: e26001d099ce53248850fee1507994a5, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 54bdf601c48fdba489aaa67abe07f257, type: 2}
   m_UseUCBPForAssetBundles: 0
