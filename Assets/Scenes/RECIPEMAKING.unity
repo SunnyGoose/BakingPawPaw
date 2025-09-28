@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 221613080}
   - component: {fileID: 221613079}
   - component: {fileID: 221613078}
+  - component: {fileID: 221613081}
   m_Layer: 5
   m_Name: InputField (TMP)
   m_TagString: Untagged
@@ -463,6 +464,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 221613076}
   m_CullTransparentMesh: 1
+--- !u!114 &221613081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221613076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.05
+  speed: 10
 --- !u!1 &329133616
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +626,7 @@ GameObject:
   - component: {fileID: 362501154}
   - component: {fileID: 362501153}
   - component: {fileID: 362501152}
+  - component: {fileID: 362501155}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -720,6 +736,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362501150}
   m_CullTransparentMesh: 1
+--- !u!114 &362501155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362501150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.05
+  speed: 10
 --- !u!1 &741968674
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +849,7 @@ GameObject:
   - component: {fileID: 845825407}
   - component: {fileID: 845825406}
   - component: {fileID: 845825405}
+  - component: {fileID: 845825408}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -928,6 +959,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845825403}
   m_CullTransparentMesh: 1
+--- !u!114 &845825408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845825403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.05
+  speed: 10
 --- !u!1 &846418248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,6 +2241,7 @@ GameObject:
   - component: {fileID: 1837975004}
   - component: {fileID: 1837975003}
   - component: {fileID: 1837975002}
+  - component: {fileID: 1837975005}
   m_Layer: 5
   m_Name: GenerateRecipe
   m_TagString: Untagged
@@ -2317,6 +2363,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837975000}
   m_CullTransparentMesh: 1
+--- !u!114 &1837975005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837975000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.05
+  speed: 10
 --- !u!1 &1977447466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,6 +2655,7 @@ GameObject:
   - component: {fileID: 2057171980}
   - component: {fileID: 2057171979}
   - component: {fileID: 2057171982}
+  - component: {fileID: 2057171983}
   m_Layer: 5
   m_Name: EASY
   m_TagString: Untagged
@@ -2718,6 +2779,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetSprite: {fileID: 0}
   newColor: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &2057171983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057171977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.05
+  speed: 10
 --- !u!1 &2138638972
 GameObject:
   m_ObjectHideFlags: 0
