@@ -18,7 +18,7 @@ public class ChatManager : MonoBehaviour
     public GameObject aiMessagePrefab;
     
     [Header("Settings")]
-    public string gasUrl = "https://script.google.com/macros/s/AKfycbzIqu_ic0KatbDtZGpUkowxSqFSeDd6xWFfjOJi1p5u3VTMrOD1RewY0aQUOBWfrr_5rA/exec";
+    public string gasUrl = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
     
     private List<ChatMessage> chatHistory = new List<ChatMessage>();
 
@@ -65,21 +65,68 @@ public class ChatManager : MonoBehaviour
 
     void AddUserMessage(string message)
     {
+        // Debug what's missing
+        if (userMessagePrefab == null)
+        {
+            Debug.LogError("User Message Prefab is not assigned in ChatManager!");
+            return;
+        }
+        
+        if (chatContent == null)
+        {
+            Debug.LogError("Chat Content is not assigned in ChatManager!");
+            return;
+        }
+        
         GameObject messageObj = Instantiate(userMessagePrefab, chatContent);
         TextMeshProUGUI messageText = messageObj.GetComponentInChildren<TextMeshProUGUI>();
+        
+        if (messageText == null)
+        {
+            Debug.LogError("User Message Prefab doesn't have a TextMeshProUGUI component!");
+            return;
+        }
+        
         messageText.text = message;
         
         chatHistory.Add(new ChatMessage { isUser = true, message = message });
         
         // Scroll to bottom
         Canvas.ForceUpdateCanvases();
+        
+        if (chatScrollView == null)
+        {
+            Debug.LogError("Chat Scroll View is not assigned in ChatManager!");
+            return;
+        }
+        
         chatScrollView.verticalNormalizedPosition = 0f;
     }
 
     void AddAIMessage(string message)
     {
+        // Debug what's missing
+        if (aiMessagePrefab == null)
+        {
+            Debug.LogError("AI Message Prefab is not assigned in ChatManager!");
+            return;
+        }
+        
+        if (chatContent == null)
+        {
+            Debug.LogError("Chat Content is not assigned in ChatManager!");
+            return;
+        }
+        
         GameObject messageObj = Instantiate(aiMessagePrefab, chatContent);
         TextMeshProUGUI messageText = messageObj.GetComponentInChildren<TextMeshProUGUI>();
+        
+        if (messageText == null)
+        {
+            Debug.LogError("AI Message Prefab doesn't have a TextMeshProUGUI component!");
+            return;
+        }
+        
         messageText.text = message;
         
         chatHistory.Add(new ChatMessage { isUser = false, message = message });
