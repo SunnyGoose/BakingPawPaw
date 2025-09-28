@@ -21,8 +21,13 @@ EditorBuildSettings:
     path: Assets/Scenes/CHATPAPA.unity
     guid: 831ff1823a1ac4014941474f490d5d8c
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Start.unity
     guid: 996813547acf2a641a61a734f322660a
+=======
+    path: Assets/Scenes/RECIPEMAKING.unity
+    guid: 99df19869967c43f8a08eab675f1145d
+>>>>>>> origin/kroball
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
