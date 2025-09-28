@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b7178189318c84fc58b467e56e400754
+guid: b4b0431b016bb41808f918f96728131e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5481919849797688533
-    second: Cabinet_0
+      213: -756669302235984923
+    second: finalcabinet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cabinet_0
+      name: finalcabinet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5dc9a561f01b31c40800000000000000
-      internalID: 5481919849797688533
+      spriteID: 5eb08c35745cf75f0800000000000000
+      internalID: -756669302235984923
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Cabinet_0: 5481919849797688533
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
