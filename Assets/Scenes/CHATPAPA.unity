@@ -1327,8 +1327,13 @@ SpriteRenderer:
   m_SortingLayer: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
+=======
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -7228325896510189364, guid: 1867d5a2433fe4053bbf49951fb95db4, type: 3}
+>>>>>>> Stashed changes
 =======
   m_SortingOrder: -1
   m_Sprite: {fileID: -7228325896510189364, guid: 1867d5a2433fe4053bbf49951fb95db4, type: 3}
@@ -2056,8 +2061,11 @@ Transform:
   - {fileID: 835786089}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Father: {fileID: 0}
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   - {fileID: 1763398531}
