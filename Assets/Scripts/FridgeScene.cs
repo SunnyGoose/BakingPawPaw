@@ -11,6 +11,10 @@ public class FridgeScene : MonoBehaviour
     }
     public void SwitchSceneToCHAT()
     {
-        SceneManager.LoadSceneAsync(4); 
+        SceneManager.LoadSceneAsync(4);
+    }
+    public void SwitchSceneToREC()
+    {
+        SceneManager.LoadSceneAsync(5); 
     }
 }
