@@ -1707,7 +1707,7 @@ MonoBehaviour:
   sendButton: {fileID: 1813117439}
   userMessagePrefab: {fileID: 1515262203886548764, guid: bfee29641f2aa4b23aa1740683bb84e0, type: 3}
   aiMessagePrefab: {fileID: 1004304518960415004, guid: 2a249735eddbc41cd975d1c610bfc103, type: 3}
-  gasUrl: https://script.google.com/macros/s/AKfycbycWkxgzskgbRUUk6XCujtYT82rygkuriOCZOUy-W8R_8b8nIJvO0HWvpnbfwoQW6X3zg/exec
+  gasUrl: https://script.google.com/macros/s/AKfycbxs8WmR3ycq6xsTPOX-pMh7KWYnE6odRgRK-9ggOGffkJa9WDFJS_5iMndfO1A7GKe51A/exec
 --- !u!114 &943318727
 MonoBehaviour:
   m_ObjectHideFlags: 0
