@@ -15,6 +15,10 @@ public class Kitchen : MonoBehaviour
     }
     public void SwitchSceneToPAPA()
     {
-        SceneManager.LoadSceneAsync(3); 
+        SceneManager.LoadSceneAsync(3);
+    }
+    public void SwitchSceneToPcam()
+    {
+        SceneManager.LoadSceneAsync(6); 
     }
 }
