@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dcc1409f77e7a474eace2ffe38222934
+guid: b4b0431b016bb41808f918f96728131e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 518162688300452520
-    second: 78_Minimalist_Tattoos_That_Will_Inspire_You_To_Get_Inked-removebg-preview_0
+      213: -756669302235984923
+    second: finalcabinet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 78_Minimalist_Tattoos_That_Will_Inspire_You_To_Get_Inked-removebg-preview_0
+      name: finalcabinet_0
       rect:
         serializedVersion: 2
-        x: 90
-        y: 88
-        width: 319
-        height: 320
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8aa820c3832e03700800000000000000
-      internalID: 518162688300452520
+      spriteID: 5eb08c35745cf75f0800000000000000
+      internalID: -756669302235984923
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      78_Minimalist_Tattoos_That_Will_Inspire_You_To_Get_Inked-removebg-preview_0: 518162688300452520
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
