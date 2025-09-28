@@ -18,7 +18,7 @@ public class ChatManager : MonoBehaviour
     public GameObject aiMessagePrefab;
     
     [Header("Settings")]
-    public string gasUrl = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+    public string gasUrl = "https://script.google.com/macros/s/AKfycbycWkxgzskgbRUUk6XCujtYT82rygkuriOCZOUy-W8R_8b8nIJvO0HWvpnbfwoQW6X3zg/exec";
     
     private List<ChatMessage> chatHistory = new List<ChatMessage>();
 
@@ -32,7 +32,7 @@ public class ChatManager : MonoBehaviour
         messageInputField.onEndEdit.AddListener(OnInputFieldEndEdit);
         
         // Add welcome message
-        AddAIMessage("Hello! I'm your AI assistant. How can I help you today?");
+        AddAIMessage("Meow~! Welcome to my cozy bakery. I’m your friendly cat assistant, kneading up answers as warm and fluffy as fresh bread. What can I whisk up for you today, nya? ");
     }
 
     void OnInputFieldEndEdit(string text)
@@ -65,21 +65,68 @@ public class ChatManager : MonoBehaviour
 
     void AddUserMessage(string message)
     {
+        // Debug what's missing
+        if (userMessagePrefab == null)
+        {
+            Debug.LogError("User Message Prefab is not assigned in ChatManager!");
+            return;
+        }
+        
+        if (chatContent == null)
+        {
+            Debug.LogError("Chat Content is not assigned in ChatManager!");
+            return;
+        }
+        
         GameObject messageObj = Instantiate(userMessagePrefab, chatContent);
         TextMeshProUGUI messageText = messageObj.GetComponentInChildren<TextMeshProUGUI>();
+        
+        if (messageText == null)
+        {
+            Debug.LogError("User Message Prefab doesn't have a TextMeshProUGUI component!");
+            return;
+        }
+        
         messageText.text = message;
         
         chatHistory.Add(new ChatMessage { isUser = true, message = message });
         
         // Scroll to bottom
         Canvas.ForceUpdateCanvases();
+        
+        if (chatScrollView == null)
+        {
+            Debug.LogError("Chat Scroll View is not assigned in ChatManager!");
+            return;
+        }
+        
         chatScrollView.verticalNormalizedPosition = 0f;
     }
 
     void AddAIMessage(string message)
     {
+        // Debug what's missing
+        if (aiMessagePrefab == null)
+        {
+            Debug.LogError("AI Message Prefab is not assigned in ChatManager!");
+            return;
+        }
+        
+        if (chatContent == null)
+        {
+            Debug.LogError("Chat Content is not assigned in ChatManager!");
+            return;
+        }
+        
         GameObject messageObj = Instantiate(aiMessagePrefab, chatContent);
         TextMeshProUGUI messageText = messageObj.GetComponentInChildren<TextMeshProUGUI>();
+        
+        if (messageText == null)
+        {
+            Debug.LogError("AI Message Prefab doesn't have a TextMeshProUGUI component!");
+            return;
+        }
+        
         messageText.text = message;
         
         chatHistory.Add(new ChatMessage { isUser = false, message = message });
@@ -92,7 +139,7 @@ public class ChatManager : MonoBehaviour
     IEnumerator SendToAI(string message)
     {
         // Show typing indicator (optional)
-        AddAIMessage("Typing...");
+        AddAIMessage("Meow...");
         GameObject typingMsg = chatContent.GetChild(chatContent.childCount - 1).gameObject;
 
         // Create form data
