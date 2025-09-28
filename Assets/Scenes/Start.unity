@@ -203,7 +203,11 @@ SpriteRenderer:
   m_Size: {x: 21.6, y: 16.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &645185239
@@ -275,7 +279,11 @@ SpriteRenderer:
   m_Size: {x: 7.7, y: 13.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &645185241
@@ -287,8 +295,13 @@ Transform:
   m_GameObject: {fileID: 645185239}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
+  m_LocalPosition: {x: -4.73, y: -0.63, z: 0}
+  m_LocalScale: {x: 0.621352, y: 0.5626521, z: 1}
+=======
   m_LocalPosition: {x: 319, y: 411, z: 0}
   m_LocalScale: {x: 43.91503, y: 37.47898, z: 1}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -472,14 +485,23 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+<<<<<<< Updated upstream
+  m_Children: []
+=======
   m_Children:
   - {fileID: 2137384536}
+>>>>>>> Stashed changes
   m_Father: {fileID: 1091851642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
+  m_AnchoredPosition: {x: 313, y: -126.7}
+  m_SizeDelta: {x: 558.2871, y: 253.4049}
+=======
   m_AnchoredPosition: {x: 221, y: -127}
   m_SizeDelta: {x: 483.08, y: 142.8398}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1373468922
 MonoBehaviour:
@@ -550,15 +572,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< Updated upstream
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+=======
   m_Color: {r: 0.5754717, g: 0.2714489, b: 0.2714489, a: 1}
+>>>>>>> Stashed changes
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
+  m_Sprite: {fileID: -354827006291661186, guid: ac8f183953bb471478e1c0b7bc366839, type: 3}
+  m_Type: 0
+=======
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
+>>>>>>> Stashed changes
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -659,7 +690,11 @@ SpriteRenderer:
   m_Size: {x: 21.6, y: 16.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1700770017
@@ -1017,6 +1052,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+=======
 --- !u!1 &2137384535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,6 +1190,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137384535}
   m_CullTransparentMesh: 1
+>>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
