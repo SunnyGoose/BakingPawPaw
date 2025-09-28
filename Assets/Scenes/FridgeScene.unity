@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 496334537}
   - component: {fileID: 496334536}
   - component: {fileID: 496334535}
+  - component: {fileID: 496334539}
   m_Layer: 5
   m_Name: Egg Button
   m_TagString: Untagged
@@ -408,6 +409,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496334533}
   m_CullTransparentMesh: 1
+--- !u!114 &496334539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496334533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.1
+  speed: 10
 --- !u!1 &800951786
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +514,7 @@ GameObject:
   - component: {fileID: 1016938245}
   - component: {fileID: 1016938244}
   - component: {fileID: 1016938243}
+  - component: {fileID: 1016938247}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -596,6 +612,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1016938247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016938242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.1
+  speed: 10
 --- !u!1 &1132046572
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,6 +639,7 @@ GameObject:
   - component: {fileID: 1132046576}
   - component: {fileID: 1132046575}
   - component: {fileID: 1132046574}
+  - component: {fileID: 1132046578}
   m_Layer: 5
   m_Name: Cream button
   m_TagString: Untagged
@@ -746,6 +777,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132046572}
   m_CullTransparentMesh: 1
+--- !u!114 &1132046578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132046572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.1
+  speed: 10
 --- !u!1 &1222596928
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +940,7 @@ GameObject:
   - component: {fileID: 1422025487}
   - component: {fileID: 1422025486}
   - component: {fileID: 1422025485}
+  - component: {fileID: 1422025489}
   m_Layer: 5
   m_Name: 'Vanilla button '
   m_TagString: Untagged
@@ -1032,6 +1078,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422025483}
   m_CullTransparentMesh: 1
+--- !u!114 &1422025489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422025483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.1
+  speed: 10
 --- !u!1 &1567327446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1138,7 @@ GameObject:
   - component: {fileID: 1729632244}
   - component: {fileID: 1729632243}
   - component: {fileID: 1729632242}
+  - component: {fileID: 1729632246}
   m_Layer: 5
   m_Name: Cream Cheese button
   m_TagString: Untagged
@@ -1215,6 +1276,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729632240}
   m_CullTransparentMesh: 1
+--- !u!114 &1729632246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729632240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.1
+  speed: 10
 --- !u!1 &1745184446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,6 +1303,7 @@ GameObject:
   - component: {fileID: 1745184450}
   - component: {fileID: 1745184449}
   - component: {fileID: 1745184448}
+  - component: {fileID: 1745184452}
   m_Layer: 5
   m_Name: Milk button
   m_TagString: Untagged
@@ -1365,6 +1441,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745184446}
   m_CullTransparentMesh: 1
+--- !u!114 &1745184452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745184446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.1
+  speed: 10
 --- !u!1 &1895892699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,6 +1618,7 @@ GameObject:
   - component: {fileID: 2051522631}
   - component: {fileID: 2051522630}
   - component: {fileID: 2051522629}
+  - component: {fileID: 2051522633}
   m_Layer: 5
   m_Name: 'Butter button '
   m_TagString: Untagged
@@ -1665,6 +1756,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051522627}
   m_CullTransparentMesh: 1
+--- !u!114 &2051522633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051522627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.1
+  speed: 10
 --- !u!1 &2062578069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1677,6 +1782,7 @@ GameObject:
   - component: {fileID: 2062578073}
   - component: {fileID: 2062578072}
   - component: {fileID: 2062578071}
+  - component: {fileID: 2062578074}
   m_Layer: 5
   m_Name: BACK
   m_TagString: Untagged
@@ -1700,8 +1806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -799.8132, y: -422.58133}
-  m_SizeDelta: {x: 206.0827, y: 159.2974}
+  m_AnchoredPosition: {x: -780, y: -446}
+  m_SizeDelta: {x: 219.4105, y: 179.1953}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2062578071
 MonoBehaviour:
@@ -1772,14 +1878,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6698113, g: 0.3507031, b: 0.3507031, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 41cbe0e15ac264d3c919fe4367a52900, type: 3}
+  m_Sprite: {fileID: -1504418827144835805, guid: ad06d1268138243cb9677ccc9d81c636, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1797,6 +1903,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062578069}
   m_CullTransparentMesh: 1
+--- !u!114 &2062578074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062578069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5eebd847c997409d85a389144f81d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleAmount: 1.1
+  speed: 10
 --- !u!1 &2137987820
 GameObject:
   m_ObjectHideFlags: 0
