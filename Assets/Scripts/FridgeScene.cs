@@ -7,6 +7,10 @@ public class FridgeScene : MonoBehaviour
 {
     public void SwitchScene2()
     {
-        SceneManager.LoadSceneAsync(0); 
+        SceneManager.LoadSceneAsync(0);
+    }
+    public void SwitchSceneToCHAT()
+    {
+        SceneManager.LoadSceneAsync(4); 
     }
 }
