@@ -18,7 +18,7 @@ public class ChatManager : MonoBehaviour
     public GameObject aiMessagePrefab;
     
     [Header("Settings")]
-    public string gasUrl = "https://script.google.com/macros/s/AKfycbycWkxgzskgbRUUk6XCujtYT82rygkuriOCZOUy-W8R_8b8nIJvO0HWvpnbfwoQW6X3zg/exec";
+    public string gasUrl = "https://script.google.com/macros/s/AKfycbxs8WmR3ycq6xsTPOX-pMh7KWYnE6odRgRK-9ggOGffkJa9WDFJS_5iMndfO1A7GKe51A/exec";
     
     private List<ChatMessage> chatHistory = new List<ChatMessage>();
 
