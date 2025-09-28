@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dryfoodsprites_0: -6821396458732449300
+      dryfoodsprites_1: -4610559337483193641
+      dryfoodsprites_10: -956671426146112400
+      dryfoodsprites_2: -5627697466956875576
+      dryfoodsprites_3: -8206472618893896257
+      dryfoodsprites_4: 2391947410848152170
+      dryfoodsprites_5: -1695444703475090479
+      dryfoodsprites_6: 2250479622679368971
+      dryfoodsprites_7: -4874551010097850248
+      dryfoodsprites_8: 4216228556561764649
+      dryfoodsprites_9: -3648322214915445804
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
