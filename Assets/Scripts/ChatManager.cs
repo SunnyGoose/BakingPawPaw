@@ -18,30 +18,25 @@ public class ChatManager : MonoBehaviour
     public GameObject aiMessagePrefab;
     
     [Header("Settings")]
-    public string gasUrl = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+    public string gasUrl = "https://script.google.com/macros/s/AKfycbxaNoyB8ROfygfT_cAYvixj-i4JalWCp70C7lwhm23wyAmOLuhMWz7o2xXBI2MEfBKBnw/exec";
     
     private List<ChatMessage> chatHistory = new List<ChatMessage>();
 
     void Start()
     {
-        // Setup button click (optional - you can remove this if you don't want a send button)
         if (sendButton != null)
             sendButton.onClick.AddListener(SendMessage);
         
-        // Setup enter key for input field
         messageInputField.onEndEdit.AddListener(OnInputFieldEndEdit);
         
-        // Add welcome message
-        AddAIMessage("Hello! I'm your AI assistant. How can I help you today?");
+        AddAIMessage("Meow~! I’m your baking pawpaw, ready to knead up answers and whisk away your worries. What shall we bake together today, nya? ");
     }
 
     void OnInputFieldEndEdit(string text)
     {
-        // Check if Enter key was pressed (not Escape or Tab)
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             SendMessage();
-            // Keep the input field selected for continuous typing
             messageInputField.ActivateInputField();
         }
     }
@@ -53,28 +48,17 @@ public class ChatManager : MonoBehaviour
         if (string.IsNullOrEmpty(message))
             return;
 
-        // Add user message to chat
         AddUserMessage(message);
-        
-        // Clear input field
         messageInputField.text = "";
         
-        // Send to AI
         StartCoroutine(SendToAI(message));
     }
 
     void AddUserMessage(string message)
     {
-        // Debug what's missing
-        if (userMessagePrefab == null)
+        if (userMessagePrefab == null || chatContent == null)
         {
-            Debug.LogError("User Message Prefab is not assigned in ChatManager!");
-            return;
-        }
-        
-        if (chatContent == null)
-        {
-            Debug.LogError("Chat Content is not assigned in ChatManager!");
+            Debug.LogError("User Message Prefab or Chat Content is not assigned!");
             return;
         }
         
@@ -88,33 +72,16 @@ public class ChatManager : MonoBehaviour
         }
         
         messageText.text = message;
-        
         chatHistory.Add(new ChatMessage { isUser = true, message = message });
-        
-        // Scroll to bottom
-        Canvas.ForceUpdateCanvases();
-        
-        if (chatScrollView == null)
-        {
-            Debug.LogError("Chat Scroll View is not assigned in ChatManager!");
-            return;
-        }
-        
-        chatScrollView.verticalNormalizedPosition = 0f;
+
+        StartCoroutine(ScrollToBottomNextFrame());
     }
 
     void AddAIMessage(string message)
     {
-        // Debug what's missing
-        if (aiMessagePrefab == null)
+        if (aiMessagePrefab == null || chatContent == null)
         {
-            Debug.LogError("AI Message Prefab is not assigned in ChatManager!");
-            return;
-        }
-        
-        if (chatContent == null)
-        {
-            Debug.LogError("Chat Content is not assigned in ChatManager!");
+            Debug.LogError("AI Message Prefab or Chat Content is not assigned!");
             return;
         }
         
@@ -128,21 +95,16 @@ public class ChatManager : MonoBehaviour
         }
         
         messageText.text = message;
-        
         chatHistory.Add(new ChatMessage { isUser = false, message = message });
-        
-        // Scroll to bottom
-        Canvas.ForceUpdateCanvases();
-        chatScrollView.verticalNormalizedPosition = 0f;
+
+        StartCoroutine(ScrollToBottomNextFrame());
     }
 
     IEnumerator SendToAI(string message)
     {
-        // Show typing indicator (optional)
         AddAIMessage("Typing...");
         GameObject typingMsg = chatContent.GetChild(chatContent.childCount - 1).gameObject;
 
-        // Create form data
         WWWForm form = new WWWForm();
         form.AddField("parameter", message);
 
@@ -150,7 +112,6 @@ public class ChatManager : MonoBehaviour
         {
             yield return request.SendWebRequest();
 
-            // Remove typing indicator
             DestroyImmediate(typingMsg);
             chatHistory.RemoveAt(chatHistory.Count - 1);
 
@@ -168,7 +129,16 @@ public class ChatManager : MonoBehaviour
         }
     }
 
-    // Optional: Clear chat history
+    IEnumerator ScrollToBottomNextFrame()
+    {
+        yield return null; // wait one frame so layout updates
+        Canvas.ForceUpdateCanvases();
+        if (chatScrollView != null)
+        {
+            chatScrollView.verticalNormalizedPosition = 0f;
+        }
+    }
+
     public void ClearChat()
     {
         foreach (Transform child in chatContent)
@@ -186,3 +156,4 @@ public class ChatMessage
     public bool isUser;
     public string message;
 }
+
