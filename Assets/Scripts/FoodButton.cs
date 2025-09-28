@@ -5,20 +5,17 @@ using UnityEngine;
 public class FoodButton : MonoBehaviour
 {
     [Header("Food Setup")]
-    public string foodName;              // e.g. "Apple"
-    public GameObject foodPrefab;        // Prefab to spawn
-    public Transform fridgeContainer;    // Parent inside fridge
-    public Vector3 fridgeLocalPosition;  // Exact position in fridge
-    public Vector3 spawnScale = Vector3.one; // Custom scale for this prefab
+    public string foodName;              
+    public GameObject foodPrefab;        
+    public Transform fridgeContainer;    
+    public Vector3 fridgeLocalPosition;  
+    public Vector3 spawnScale = Vector3.one; 
 
-    // Shared state (accessible anywhere)
-    public static List<string> storedFoods = new List<string>();
+    // Track spawned objects (only while this scene is active)
     private static Dictionary<string, GameObject> spawnedFoods = new Dictionary<string, GameObject>();
 
-    // Event so UI can update when list changes
     public static Action OnFoodListChanged;
 
-    // Called by the UI Button OnClick()
     public void OnFoodButtonClick()
     {
         if (string.IsNullOrEmpty(foodName) || foodPrefab == null || fridgeContainer == null)
@@ -27,7 +24,7 @@ public class FoodButton : MonoBehaviour
             return;
         }
 
-        if (spawnedFoods.ContainsKey(foodName))
+        if (FoodData.Instance.storedFoods.Contains(foodName))
             RemoveFood();
         else
             AddFood();
@@ -35,16 +32,13 @@ public class FoodButton : MonoBehaviour
 
     private void AddFood()
     {
-        // Instantiate prefab under fridge container
         GameObject spawned = Instantiate(foodPrefab, fridgeContainer);
-
-        // Set custom scale and position
         spawned.transform.localScale = spawnScale;
         spawned.transform.localPosition = fridgeLocalPosition;
         spawned.transform.localRotation = Quaternion.identity;
 
         spawnedFoods[foodName] = spawned;
-        storedFoods.Add(foodName);
+        FoodData.Instance.storedFoods.Add(foodName);
 
         OnFoodListChanged?.Invoke();
         Debug.Log($"Added {foodName} at {fridgeLocalPosition} with scale {spawnScale}");
@@ -58,23 +52,28 @@ public class FoodButton : MonoBehaviour
             spawnedFoods.Remove(foodName);
         }
 
-        storedFoods.Remove(foodName);
+        FoodData.Instance.storedFoods.Remove(foodName);
+
         OnFoodListChanged?.Invoke();
         Debug.Log($"Removed {foodName} from fridge.");
     }
 
-#if UNITY_EDITOR
-    // Optional: Spawn prefab in editor for positioning
-    [ContextMenu("Spawn Prefab In Editor")]
-    private void SpawnInEditor()
+    // Called when reloading the fridge scene to rebuild all foods
+    public static void RebuildFridge(Transform fridgeContainer, Dictionary<string, FoodButton> buttonLookup)
     {
-        if (foodPrefab != null && fridgeContainer != null)
+        spawnedFoods.Clear();
+
+        foreach (string food in FoodData.Instance.storedFoods)
         {
-            GameObject spawned = UnityEditor.PrefabUtility.InstantiatePrefab(foodPrefab, fridgeContainer) as GameObject;
-            spawned.transform.localPosition = fridgeLocalPosition;
-            spawned.transform.localScale = spawnScale;
-            spawned.transform.localRotation = Quaternion.identity;
+            if (buttonLookup.TryGetValue(food, out FoodButton fb))
+            {
+                GameObject spawned = GameObject.Instantiate(fb.foodPrefab, fridgeContainer);
+                spawned.transform.localScale = fb.spawnScale;
+                spawned.transform.localPosition = fb.fridgeLocalPosition;
+                spawned.transform.localRotation = Quaternion.identity;
+
+                spawnedFoods[food] = spawned;
+            }
         }
     }
-#endif
 }
